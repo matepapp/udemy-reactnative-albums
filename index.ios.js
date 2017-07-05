@@ -1,3 +1,4 @@
+// @flow
 // index.ios.js - place code in here for iOS
 
 // Import a library to help create a Component

@@ -1,20 +1,9 @@
 {
-  "parser": "babel-eslint",
   "extends": "airbnb",
-  "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
-  },
-  "env": {
-    "browser": true,
-    "node": true,
-    "mocha": true
-  },
+
   "rules": {
-    "semi": [ 2, "never" ],
-  },
-  "plugins": [
-    "babel",
-    "react"
-  ]
+    // `.jsx` extension cannot be used with React Native
+    // https://github.com/airbnb/javascript/issues/982
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+  }
 }
